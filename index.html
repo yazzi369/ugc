@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Goddammit Labs - Food Science Made Fun</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <h1>You Goddammit Labs</h1>
+                    <span class="logo__tagline">🔬 Food Science Made Fun</span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="#home" class="nav__link nav__link--active">Home</a></li>
+                        <li><a href="#blog" class="nav__link">Blog</a></li>
+                        <li><a href="#recipes" class="nav__link">Recipes</a></li>
+                        <li><a href="#research" class="nav__link">Research</a></li>
+                        <li><a href="#community" class="nav__link">Community</a></li>
+                        <li><a href="#submit" class="nav__link">Submit Ideas</a></li>
+                        <li><a href="#about" class="nav__link">About</a></li>
+                        <li><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="Search posts, recipes...">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h2 class="hero__title">Where Food Science Meets Fun</h2>
+                <p class="hero__subtitle">Exploring the fascinating world of food through experiments, recipes, and community discoveries. Join our community of food science enthusiasts!</p>
+                <div class="hero__buttons">
+                    <button class="btn btn--primary btn--lg">Explore Posts</button>
+                    <button class="btn btn--secondary btn--lg">Submit Your Idea</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Posts Section -->
+    <section class="featured-posts">
+        <div class="container">
+            <h2 class="section__title">Featured Posts</h2>
+            <div class="posts-grid" id="featured-posts-grid">
+                <!-- Posts will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section__title">Explore Categories</h2>
+            <div class="categories-grid" id="categories-grid">
+                <!-- Categories will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section class="recipes">
+        <div class="container">
+            <h2 class="section__title">Experimental Recipes</h2>
+            <div class="recipes-grid" id="recipes-grid">
+                <!-- Recipes will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Highlights -->
+    <section class="community-highlights">
+        <div class="container">
+            <h2 class="section__title">Community Highlights</h2>
+            <div class="community-content">
+                <div class="community-stats">
+                    <div class="stat-card">
+                        <h3>1,247</h3>
+                        <p>Community Members</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>89</h3>
+                        <p>Experiments Shared</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>156</h3>
+                        <p>Recipes Tested</p>
+                    </div>
+                </div>
+                <div class="community-form">
+                    <h3>Share Your Food Science Discovery</h3>
+                    <form id="community-form">
+                        <div class="form-group">
+                            <label class="form-label">Your Name</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Title</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Category</label>
+                            <select class="form-control" required>
+                                <option value="">Select a category...</option>
+                                <option value="food-tech">Food Tech</option>
+                                <option value="recipes">Recipes</option>
+                                <option value="research">Research</option>
+                                <option value="psychology">Food Psychology</option>
+                                <option value="sustainability">Sustainability</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Your Discovery</label>
+                            <textarea class="form-control" rows="4" placeholder="Tell us about your food science experiment, recipe, or discovery..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Submit Your Idea</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comment System Mockup -->
+    <section class="comments-section">
+        <div class="container">
+            <h2 class="section__title">Latest Discussions</h2>
+            <div class="comments-container">
+                <div class="comment">
+                    <div class="comment__header">
+                        <strong>FoodScienceNerd</strong>
+                        <span class="comment__date">2 hours ago</span>
+                    </div>
+                    <p class="comment__text">Just tried the molecular gastronomy mac & cheese recipe - absolutely mind-blowing! The spherification technique really transformed the texture.</p>
+                    <div class="comment__actions">
+                        <button class="comment__btn">👍 12</button>
+                        <button class="comment__btn">Reply</button>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment__header">
+                        <strong>LabStudent123</strong>
+                        <span class="comment__date">5 hours ago</span>
+                    </div>
+                    <p class="comment__text">The cilantro article finally explains why I hate it so much. Genetics are wild!</p>
+                    <div class="comment__actions">
+                        <button class="comment__btn">👍 8</button>
+                        <button class="comment__btn">Reply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h3>You Goddammit Labs</h3>
+                    <p>Making food science accessible, fun, and delicious for everyone.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="social-link">📱 Instagram</a>
+                        <a href="#" target="_blank" class="social-link">🐦 Twitter</a>
+                        <a href="#" target="_blank" class="social-link">📺 YouTube</a>
+                        <a href="#" target="_blank" class="social-link">💼 LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#recipes">Recipes</a></li>
+                        <li><a href="#research">Research</a></li>
+                        <li><a href="#community">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4>Newsletter</h4>
+                    <p>Get the latest food science discoveries delivered to your inbox!</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" class="form-control" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn--primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 You Goddammit Labs. All rights reserved. | Making food science fun since 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
